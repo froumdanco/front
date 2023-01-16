@@ -1,0 +1,40 @@
+{
+  "name": "dancofroum",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start -p 17543",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^6.2.0",
+    "@fortawesome/free-solid-svg-icons": "^6.2.0",
+    "@fortawesome/react-fontawesome": "^0.2.0",
+    "@hapi/iron": "^7.0.0",
+    "@tiptap/react": "^2.0.0-beta.202",
+    "@tiptap/starter-kit": "^2.0.0-beta.202",
+    "axios": "^1.1.3",
+    "bulma": "^0.9.4",
+    "cookie": "^0.5.0",
+    "cookies": "^0.8.0",
+    "cookies-next": "^2.1.1",
+    "next": "12.3.1",
+    "next-hcaptcha": "^1.4.3",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-fontawesome": "^1.7.1",
+    "react-hook-form": "^7.38.0",
+    "react-image-crop": "^10.0.8",
+    "react-quill": "^2.0.0",
+    "react-sweetalert2": "^0.5.2",
+    "sass": "^1.55.0",
+    "sweetalert2": "^11.6.5"
+  },
+  
+  "devDependencies": {
+    "eslint": "8.25.0",
+    "eslint-config-next": "12.3.1"
+  }
+}

@@ -1,0 +1,209 @@
+.headerofwebsite {
+  width: 100%;
+  height: 180px;
+  background-color: black !important;
+  ;
+}
+
+.logos {
+  width: 200px;
+  padding-top: 100px;
+}
+
+.treebook {
+  width: 140px !important;
+  margin-top: 10px;
+}
+
+.wleft {
+  width: 100%;
+  text-align: right !important;
+  height: 100px;
+  padding: 30px;
+}
+.wright {
+  width: 100%;
+  text-align: left !important;
+  height: 100px;
+  padding: 40px;
+  padding: 30px;
+}
+
+.w100 {
+  width: 100%;
+  background-color: red;
+}
+
+.whiteback {
+}
+
+.formprofile {
+  max-width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.textcenter {
+  text-align: center;
+  width: 100%;
+}
+
+.colorred {
+  color: red !important;
+}
+
+.changeavatartext {
+
+}
+
+.changeavatartext {
+  background-color: black;
+  color: #fff;
+  position: relative;
+  margin-top: -84px;
+  margin-left: 10px;
+  padding: 3px;
+  text-align: center;
+  border-radius: 4px;
+  display: none;
+  cursor: pointer;
+  font-size: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90px;
+
+  
+}
+
+
+.iamgeavatarbox:hover> .changeavatartext {
+  animation-name: opacityanimation;
+  animation-duration: 1s;
+  display: block;
+
+}
+
+@keyframes opacityanimation {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 100;
+  }
+}
+.avatarname{
+  font-size: 10px;
+  font-weight: bold;
+  text-align: left;
+}
+.mt4{
+  margin-top: 40px;
+}
+.hrefname{
+  text-decoration: none !important;
+}
+.backwhite{
+  background-color: #fff;
+}
+.height200{
+  min-height: 120px;
+}
+
+.borderos{
+  background-color: black;
+}
+.whitetext{
+  color: #fff;
+}
+.whitetext *{
+  color: #fff;
+}
+.topheader{
+  border-top: solid 3px black;
+
+}
+.topheader2{
+  background: linear-gradient(180deg, rgba(0,80,255,1) 1%, rgba(0,212,255,1) 100%);
+
+}
+.hastextwhite{
+  color: #ffffff;
+}
+.topheader2 .card-header-title *{
+  color: #fff !important;
+}
+.myitembox{
+  border-top: solid 10px darkblue;
+}
+.mytitlefehater{
+  width: 100%;
+  overflow: hidden;
+  color: #333333;
+  font-size: 16px !important;
+}
+.mydescription{
+  font-size: 14px;
+  color: #333333;
+}
+.listofitem{
+  color: gray;
+}
+.myboxs{
+
+}
+.backdanesh{
+ border: solid 1px lightgray;
+ 
+}
+.footergroup{
+  background-color: lightgray;
+  color: #333333;
+  min-height: 50px;
+  padding: 0px !important;
+  border-radius: 0px 0px 2px 2px;
+}
+.mb2{
+  margin-bottom: 20px;
+}
+.bluetext{
+  color: darkcyan;
+}
+.bgwhite{
+  background-color: #fff;
+  margin-top: 20px;
+}
+.backheader{
+  background-color: lightgray;
+  color: #fff;
+  margin-top: 10px;
+  color: #333;
+  border-radius: 5px 5px 0px 0px;
+}
+.backheader2{
+  border-right: solid 1px lightblue;
+  border-left: solid 1px lightblue;
+  border-bottom: solid 1px lightblue;
+  margin-bottom: 20px !important;
+
+}
+.bluesection{
+  background-color: black !important;
+  color: #fff;
+}
+.textblack{
+  color: black;
+}
+.withlimited{
+  width: 400px;
+  border-radius: 4px;
+  -webkit-box-shadow: 10px 10px 12px 0px rgba(209,209,209,0.6);
+-moz-box-shadow: 10px 10px 12px 0px rgba(209,209,209,0.6);
+box-shadow: 10px 10px 12px 0px rgba(209,209,209,0.6);
+
+  padding: 40px;
+  margin-top: 20px;
+}
+.colorblack{
+  color: black;
+}

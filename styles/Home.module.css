@@ -207,3 +207,20 @@ box-shadow: 10px 10px 12px 0px rgba(209,209,209,0.6);
 .colorblack{
   color: black;
 }
+@media only screen and (max-width: 600px) {
+  .wright{
+    text-align: center !important;
+    width: 100%;
+  }
+  .treebook{
+    width: 90px !important;
+
+  }
+  .headerofwebsite{
+    text-align: center !important;
+    
+  }
+  .headerofwebsite{
+    height: 150px !important;
+  }
+}

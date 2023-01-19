@@ -7,6 +7,7 @@ import axios from 'axios';
 import { url } from '../data/config';
 export const HeaderofSite = () => {
     const [listoftgroup, SetGroop] = React.useState(null);
+    const [itemshow, SetItem] = React.useState(false);
 
     useEffect(() => {
         // let data = await axios.get(`${url}/v1/fgroup`);
@@ -32,21 +33,23 @@ export const HeaderofSite = () => {
                 <div className="navbar-brand">
                     <a className="navbar-item" href="/">
                         <div className={` ${styles.whitetext}`}>
-                            <strong>DANCO COIN </strong>
+                            <h4>DANCO COIN </h4>
                         </div>
                     </a>
-
-                    <a role="button" className="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+                    {/* itemshow, SetItem */}
+                    <a role="button" onClick={() => SetItem(itemshow == true ? false : true)} className="navbar-burger" aria-label="menu" aria-expanded="true" data-target="navbarBasicExample">
                         <span aria-hidden="true"></span>
                         <span aria-hidden="true"></span>
                         <span aria-hidden="true"></span>
                     </a>
+
                 </div>
 
+
                 <div id="navbarBasicExample" className={` navbar-menu ${styles.whitetext}`} >
-                <a class="navbar-item" href='/'>
-        Home
-      </a>
+                    <a class="navbar-item" href='/'>
+                        Home
+                    </a>
 
                     {listoftgroup != null &&
                         listoftgroup.message.map((item, key) => {
@@ -91,8 +94,51 @@ export const HeaderofSite = () => {
                         </div>
                     </div>
                 </div>
+
             </nav>
             <hr />
+            <div>
+                {itemshow == true &&
+                    <>
+                        <ul className=''>
+                        <div className="navbar-item "> <a class="button navbar-item" href='/'>
+                                Home
+                            </a></div>
+                            {listoftgroup != null &&
+                                listoftgroup.message.map((item, key) => {
+
+                                    return (<div className="navbar-item ">
+
+                                        <a className="button navbar-item" href={`/group/${item.id}`}> {item.name} </a>
+
+                                    </div>)
+                                })}
+
+                        </ul>
+                        <div className="buttons m-4">
+                            {
+                                lgoincheck == false ?
+                                    <section>
+                                        <a href='/register' className="button is-danger">
+                                            <strong>Sign up</strong>
+                                        </a>
+                                        <a href='/login' className="button is-primary">
+                                            <strong>Login</strong>
+                                        </a>
+                                    </section>
+                                    :
+                                    <a href='/profile' className="button is-light">
+                                        Profile
+                                    </a>
+                            }
+
+
+
+                        </div>
+                    </>
+                }
+
+            </div>
         </div>
 
     )

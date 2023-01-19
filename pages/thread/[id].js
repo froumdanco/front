@@ -151,8 +151,8 @@ export default function thread({ mydata, id, pages }) {
                                                 >
                                                     <FontAwesomeIcon icon={faReply} />  Replay
                                                 </a>
-                                                : <a className="button m-3  is-small ">
-                                                    <FontAwesomeIcon icon={faLock} /> <p className='p-3'> Login</p>
+                                                : <a className="button m-3 is-danger  is-small " href='/login'>
+                                                    <FontAwesomeIcon icon={faLock} /> <p className='p-3'> Login for Replay</p>
                                                 </a>
                                         )}
 

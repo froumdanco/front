@@ -54,19 +54,11 @@ export default function ShowQuistion({ data, id }) {
                     {domLoaded && (
                         <header className={`card-header ${styles.topheader2} `} color='has-text-black'>
                             <p className={`card-header-title`}>
-
-
-
                                 <div className={` ${styles.hastextwhite} `}>{data.message.name}</div>
-
-
-
                             </p>
                             <div className='p-2'>
                                 <small className={` ${styles.hastextwhite} `}>{data.message.description}</small>
-
                             </div>
-
                         </header>
                     )}
                     <div className='mt-4 container'>

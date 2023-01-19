@@ -2,7 +2,7 @@ import { url } from '../data/config'
 import { useEffect, useState } from 'react';
 import axios from 'axios';
 import styles from '../styles/Home.module.css'
-
+import { Facebook } from '@fortawesome/fontawesome-svg-core'
 export function MyGroup({ }) {
   let [groupitem, setGroup] = useState();
   useEffect(() => {
@@ -63,6 +63,7 @@ export const GroupDetailList = ({ item }) => {
               <article className={` mt-3 ${styles.mb2}  `}>
                 <div class="">
                   <div className="content">
+                    
                     <h4 className={` ${styles.mytitlefehater}  `}>{items.name}</h4>
                     <p className={` ${styles.mydescription}`}>{items.description}</p>
 

@@ -1,5 +1,6 @@
 import styles from '../styles/Home.module.css';
-
+import FontAwesomeIcon from 'react-fontawesome';
+import { faShare } from '@fortawesome/free-solid-svg-icons';
 export function AnSection({ data }) {
     return (
         <>
@@ -42,11 +43,20 @@ export function SliderSites({ data }) {
                             <div className={styles.avatarname}>{` Author: ${data.toUser.name} ${data.toUser.lastname}  `} </div>
 
                         </div>
+                        <div className="column text-left  is-right">
+                            <div className={`${styles.avatarname} ${styles.textleft}`}>
+                                {/* <a className=' '>
+                                   Share 
+                        
+                                </a> */}
 
+                            </div>
+
+                        </div>
                     </div>
-                    <div  className={` columns ${styles.backheader2}`}>
+                    <div className={` columns ${styles.backheader2}`}>
 
-                        <div className={ `column is-1 is-centered  ${styles.bluesection} ` }>
+                        <div className={`column is-1 is-centered  ${styles.bluesection} `}>
                             <figure class="image is-64x64">
                                 {data.toUser.avatar != null && <img class="is-rounded" src={data.toUser.avatar} />}
                             </figure>
